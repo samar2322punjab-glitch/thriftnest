@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
-<body>
+<>
   <div class="page-transition"></div>
   <header class="site-header">
     <div class="container nav-container">
@@ -174,25 +174,13 @@
   </footer>
 
   <div class="toast" id="toast"></div>
-  <script src="script.js"></script>
-</body>
+  <script type="module" src="script.js"></script>
+</<h2>Add Product</h2>
+
+<input type="text" id="name" placeholder="Product Name">
+<input type="number" id="price" placeholder="Price">
+<input type="text" id="image" placeholder="Image URL">
+
+<button onclick="addProduct()">Add Product</button>>
 </html>
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-  import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyChNTn_ZyseLPwyjutvIh_bYFzlcmc_ey4",
-    authDomain: "thriftnest-dfec6.firebaseapp.com",
-    projectId: "thriftnest-dfec6",
-    storageBucket: "thriftnest-dfec6.firebasestorage.app",
-    messagingSenderId: "563057446730",
-    appId: "1:563057446730:web:1b4091c2da6d32479c7bb3",
-    measurementId: "G-6BNJ4S4TQQ"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-
-  console.log("Firebase connected");
-</script> 

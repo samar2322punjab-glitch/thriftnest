@@ -1,4 +1,4 @@
-/* ThriftNest - Main site logic */
+/import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";* ThriftNest - Main site logic */
 const STORAGE_KEYS = {
   products: "thriftnest_products",
   cart: "thriftnest_cart",
